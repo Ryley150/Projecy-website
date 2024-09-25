@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory 3 - Enhancing User Experience with Audio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #121212;
+            color: #fff;
+            text-align: center;
+        }
+
+        h1 {
+            color: #1DB954
+        }
+
+        .audio-container {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        audio {
+            width: 100%;
+            outline: none;
+            background-color: #1DB954;
+            border-radius: 10px;
+        }
+
+        .size-image {
+            width: 300px;
+            height: 300px;
+            border: 4px solid #1DB954;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+        }
+
+        .size-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .caption {
+            font-size: 2.2em;
+           color: #1DB954
+        }
+
+        /* Styling for buttons to match Spotify design */
+        audio::-webkit-media-controls-play-button,
+        audio::-webkit-media-controls-pause-button {
+            color: #1DB954;
+        }
+    </style>
+</head>
+<body>
+    <div >
+        <h1>Enhancing User Experience with Audio</h1>
+<h1>Your Playlist for Today</h1>
+       
+        <div class="size-image">
+            <img src="images (75).jpeg" alt="Cyberpunk 2077 Image">
+        </div>
+        <div class="caption">
+            I Really Want to Stay at Your House</br>
+            From a netflix series EdgeRunners
+        </div>
+    </div>
+    <div></div>
+     <audio controls >
+            <source src="[SPOTIFY-DOWNLOADER.COM] I Really Want to Stay at Your House.mp3" type="audio/mpeg">
+            <source src="audiofile.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+</body>
+</html>
